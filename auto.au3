@@ -1,14 +1,12 @@
 #cs ----------------------------------------------------------------------------
 
  AutoIt Version: 3.3.14.5
- Author:         myName
+ Author:         pxuanbach
 
  Script Function:
-	Template AutoIt script.
+	auto fishing PlayTogether
 
 #ce ----------------------------------------------------------------------------
-
-; Script Start - Add your code below here
 #include "FastFind.au3"
 #include "HandleImgSearch.au3"
 #include <WinAPI.au3>
@@ -195,6 +193,7 @@ Func _HandleCreateInvRect($hWnd, $iX, $iY, $iW, $iH)
 	_WinAPI_DrawRect($aPos[0] + $iX, $aPos[1] + $iY, $aPos[0] + $iX + $iW, $aPos[1] + $iY + $iH, 0xFF0000)
 EndFunc
 
+#cs
 Func MemoryReadPixel($x, $y, $handle)
    Local $hDC
    Local $iColor
@@ -254,3 +253,4 @@ Func test_speed_PixelGetColor($param1)
 
    Return($count / 100)
 EndFunc ;==>test_speed_PixelGetColor
+#ce
