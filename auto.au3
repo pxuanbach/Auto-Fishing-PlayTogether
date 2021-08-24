@@ -16,9 +16,10 @@
 #include <WindowsConstants.au3>
 DllCall("User32.dll","bool","SetProcessDPIAware")
 HotKeySet('{ESC}','Thoat_Auto')
+HotKeySet("{F2}", "_capture_handle")
+HotKeySet("{F3}", "_handle")
 Opt("PixelCoordMode", 0)
 ;$timerHndl = TimerInit()
-
 
 #cs
 #Region ### START Koda GUI section ### Form=
@@ -28,7 +29,6 @@ $Button1 = GUICtrlCreateButton("Start (F3)", 160, 8, 75, 33)
 $List1 = GUICtrlCreateList("", 24, 48, 209, 175)
 GUISetState(@SW_SHOW)
 #EndRegion ### END Koda GUI section ###
-Global $FFhWnd
 While 1
 	$nMsg = GUIGetMsg()
 	Switch $nMsg
@@ -41,30 +41,60 @@ While 1
 	EndSwitch
 WEnd
 #ce
+Global $FFhWnd = 0
+Opt("MouseCoordMode", 1)
 
-;While 1
-;	FFSnapShot()
-;	$aCoord = FFGetPixel(912, 301)
-	;$aCoord = PixelGetColor(912, 301, $FFhWnd)
-;	_HandleCreateInvRect($FFhWnd, 911, 300, 5, 5)
-;	ConsoleWrite(Hex($aCoord) & @CRLF)
-;WEnd
+While 1
+	If $FFhWnd <> 0 Then
+		ExitLoop
+	EndIf
+    $avMousePos = MouseGetPos()
+    $avWin = DllCall("user32.dll", "hwnd", "WindowFromPoint", "int", $avMousePos[0], "int", $avMousePos[1])
+    $hWin = $avWin[0]
+    $sTitle = WinGetTitle($hWin)
+    ;ToolTip("HWND = " & $hWin & @LF & "Title = " & $sTitle)
+WEnd
+
+	;$FFhWnd = WinGetHandle("0")
+Sleep(100)
+FFSetWnd($FFhWnd)
+Sleep(1000)
+Select_Tool($FFhWnd)
+While 1
+	Fishing($FFhWnd)
+	Store_Fish($FFhWnd)
+WEnd
 
 
-	$FFhWnd = WinGetHandle("0")
-	Sleep(100)
+Func _handle()
+    If $FFhWnd == 0 Then
+		$FFhWnd = $hWin
+		MsgBox(0,0,"Geted handle:"&$hWin)
+	Else
+		ConsoleWrite($FFhWnd & @CRLF)
+	EndIf
+EndFunc
+
+
+Func _capture_handle()
 	FFSetWnd($FFhWnd)
-	;FFSnapShot()
-	;FFSaveBMP('todo')
-	Sleep(100)
-	Select_Tool($FFhWnd)
-	While 1
-		Fishing($FFhWnd)
-		Store_Fish($FFhWnd)
-	WEnd
+	FFSnapShot()
+	FFSaveBMP('todo')
+EndFunc
+
+#cs test
+While 1
+	FFSnapShot()
+	$aCoord = FFGetPixel(729, 474)
+	;4310515
+	;$aCoord = PixelGetColor(912, 301, $FFhWnd)
+	_HandleCreateInvRect($FFhWnd, 729, 474, 10, 10)
+	ConsoleWrite(Hex($aCoord) & @CRLF)
+WEnd
+#ce
 
 
-#cs
+#cs test time process
 MsgBox(0, "", "PixelGetColor color returned : " & hex(PixelGetColor(200, 200, $FFhWnd)) & @CRLF & _
                  "FFGetPixel color returned : " & Hex(FFGetPixel(200, 200, 1)) & @CRLF & _
                  "MemoryReadPixel color returned : " & MemoryReadPixel(200, 200, $FFhWnd) )
@@ -105,8 +135,15 @@ Func Fishing($WHnd)
 	Sleep(10)
 	ControlClick($WHnd,'','','left',1,755,330) ;click fishing
 	ConsoleWrite('click fishing'& @CRLF)
-	Check_Repair_Tool($WHnd)
-	Sleep(15000)
+	Sleep(1000)
+	If Check_Repair_Tool($WHnd) = True Then
+		ControlClick($WHnd,'','','left',1,755,330) ;click fishing
+		Sleep(10)
+		ControlClick($WHnd,'','','left',1,755,330) ;click fishing
+		ConsoleWrite('click fishing'& @CRLF)
+	EndIf
+
+	Sleep(14000)
 	ConsoleWrite('Start' & @CRLF)
 	Local $aCoord1, $aCoord2, $aCoord3
 	While 1
@@ -117,9 +154,9 @@ Func Fishing($WHnd)
 
 		_HandleCreateInvRect($WHnd, 467, 50, 16, 5)
 		If ($aCoord1 = 16777215) Or ($aCoord2 = 16777215) Or ($aCoord3 = 16777215) Then
-			For $i = 1 To 30
+			For $i = 1 To 40
 				ControlClick($WHnd,'','','left',1,835,422)
-				Sleep(20)
+				Sleep(40)
 			Next
 			Sleep(1000)
 			ExitLoop
@@ -129,29 +166,44 @@ EndFunc
 
 Func Store_Fish($WHnd)
 	Sleep(4000)
-	ConsoleWrite('check store'& @CRLF)
-	While 1
-		FFSnapShot()
-		$aCoordStore = FFGetPixel(645, 440)
-		$aCoordShare = FFGetPixel(845, 440)
-		If ($aCoordStore = 4310515) And ($aCoordShare = 16762653) Then
-			ControlClick($WHnd,'','','left',1,665, 420) ;click store
-			ConsoleWrite('clicked' & @CRLF)
-			Sleep(2000)
-			ExitLoop
-		EndIf
-	WEnd
+	If Check_Fishing_Fail($WHnd) = False Then
+		ConsoleWrite('check store'& @CRLF)
+		While 1
+			FFSnapShot()
+			$aCoordStore = FFGetPixel(729, 474)
+			$aCoordShare = FFGetPixel(845, 440)
+			If ($aCoordStore = 4310515) Or ($aCoordShare = 16762653) Then
+				ControlClick($WHnd,'','','left',1,729, 440) ;click store
+				ConsoleWrite('clicked' & @CRLF)
+				Sleep(2000)
+				ExitLoop
+			EndIf
+		WEnd
+	EndIf
+EndFunc
+
+Func Check_Fishing_Fail($WHnd)
+	FFSnapShot()
+	$aCoord = FFGetPixel(912, 301)
+	ConsoleWrite('check fishing fail'& @CRLF)
+	If ($aCoord = 14893121) Then
+		ConsoleWrite('fishing fail'& @CRLF)
+		Return True
+	EndIf
+	Return False
 EndFunc
 
 Func Check_Repair_Tool($WHnd)
 	;bag: color 14893121 (912, 301)
-	Sleep(2000)
+	Sleep(3000)
 	FFSnapShot()
 	$aCoord = FFGetPixel(912, 301)
 	ConsoleWrite('check repair tool'& @CRLF)
 	If ($aCoord = 14893121) Then
 		Repair_Tool($WHnd)
+		Return True
 	EndIf
+	Return False
 EndFunc
 
 Func Repair_Tool($WHnd)

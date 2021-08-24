@@ -63,3 +63,218 @@
 		Started  Tue Aug 24 20:10:53 2021
 
              1.071mS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 22:51:41 2021
+
+           731.500µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 22:57:16 2021
+
+           785.300µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 22:58:08 2021
+
+           612.200µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:07:01 2021
+
+           777.000µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:07:36 2021
+
+           816.100µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:13:31 2021
+
+           718.100µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:17:43 2021
+
+           682.700µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:18:29 2021
+
+           726.600µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:19:17 2021
+
+           590.000µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:19:42 2021
+
+           704.900µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:20:20 2021
+
+           774.000µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:20:44 2021
+
+           782.600µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:20:54 2021
+
+           908.000µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:21:01 2021
+
+           642.100µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:21:17 2021
+
+           750.300µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:21:36 2021
+
+           784.500µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:22:07 2021
+
+           525.800µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:22:23 2021
+
+           688.900µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:22:29 2021
+
+           630.900µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:22:50 2021
+
+           687.400µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:23:06 2021
+
+           630.000µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:23:29 2021
+
+           604.400µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:24:08 2021
+
+           663.800µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:24:16 2021
+
+           637.800µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:24:49 2021
+
+           684.100µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:25:53 2021
+
+           780.800µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:26:24 2021
+
+           621.700µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:26:33 2021
+
+           716.200µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:27:16 2021
+
+           702.000µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:27:20 2021
+
+           747.100µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:27:38 2021
+
+           679.800µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:27:45 2021
+
+           914.600µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:27:58 2021
+
+           808.800µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:28:06 2021
+
+           706.200µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:28:12 2021
+
+           608.400µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:28:48 2021
+
+           802.600µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:29:21 2021
+
+           688.700µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:31:37 2021
+
+           785.400µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:32:07 2021
+
+           648.000µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:33:21 2021
+
+           789.000µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:33:37 2021
+
+           553.700µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:45:18 2021
+
+           848.300µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 23:47:37 2021
+
+           652.300µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
