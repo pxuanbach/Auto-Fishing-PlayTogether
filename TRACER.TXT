@@ -1,0 +1,5 @@
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Tue Aug 24 19:03:33 2021
+
+           756.800µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
