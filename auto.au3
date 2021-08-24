@@ -8,21 +8,39 @@
 
 #ce ----------------------------------------------------------------------------
 #include "FastFind.au3"
-#include "HandleImgSearch.au3"
 #include <WinAPI.au3>
+#include <ButtonConstants.au3>
+#include <EditConstants.au3>
+#include <GUIConstantsEx.au3>
+#include <GUIListBox.au3>
+#include <WindowsConstants.au3>
 DllCall("User32.dll","bool","SetProcessDPIAware")
 HotKeySet('{ESC}','Thoat_Auto')
 Opt("PixelCoordMode", 0)
+;$timerHndl = TimerInit()
 
-$timerHndl = TimerInit()
 
-$FFhWnd = WinGetHandle("0")
-;Local $aClientSize = WinGetClientSize($FFhWnd)
+#cs
+#Region ### START Koda GUI section ### Form=
+$Form1 = GUICreate("AutoFishing", 267, 248, 600, 253)
+$Title = GUICtrlCreateInput("0", 24, 16, 121, 21)
+$Button1 = GUICtrlCreateButton("Start (F3)", 160, 8, 75, 33)
+$List1 = GUICtrlCreateList("", 24, 48, 209, 175)
+GUISetState(@SW_SHOW)
+#EndRegion ### END Koda GUI section ###
+Global $FFhWnd
+While 1
+	$nMsg = GUIGetMsg()
+	Switch $nMsg
+		Case $GUI_EVENT_CLOSE
+			Exit
 
-FFSetWnd($FFhWnd)
-FFSnapShot()
-;FFSaveBMP('todo')
-
+		Case $Title
+		Case $Button1
+			;Start_Auto()
+	EndSwitch
+WEnd
+#ce
 
 ;While 1
 ;	FFSnapShot()
@@ -32,16 +50,18 @@ FFSnapShot()
 ;	ConsoleWrite(Hex($aCoord) & @CRLF)
 ;WEnd
 
-;Run
 
-Sleep(100)
-Select_Tool($FFhWnd)
-While 1
-	Fishing($FFhWnd)
-	Store_Fish($FFhWnd)
-WEnd
-
-;EndRun
+	$FFhWnd = WinGetHandle("0")
+	Sleep(100)
+	FFSetWnd($FFhWnd)
+	;FFSnapShot()
+	;FFSaveBMP('todo')
+	Sleep(100)
+	Select_Tool($FFhWnd)
+	While 1
+		Fishing($FFhWnd)
+		Store_Fish($FFhWnd)
+	WEnd
 
 
 #cs
@@ -58,7 +78,7 @@ Func Select_Tool($WHnd)
 	Sleep(1000)
 	ControlClick($WHnd,'','','left',1,900,317) ;click bag
 	Sleep(10)
-	ControlClick($WHnd,'','','left',1,900,317) ;click bag
+	ControlClick($WHnd,'','','left',2,900,317) ;click bag
 	ConsoleWrite('click bag'& @CRLF)
 	Sleep(1500)
 	ControlClick($WHnd,'','','left',1,692,70) ;click tool
