@@ -7,6 +7,7 @@
 	auto fishing PlayTogether
 
 #ce ----------------------------------------------------------------------------
+#RequireAdmin
 #include "FastFind.au3"
 #include <WinAPI.au3>
 #include <ButtonConstants.au3>
@@ -19,7 +20,6 @@ HotKeySet('{ESC}','Thoat_Auto')
 HotKeySet("{F2}", "_capture_handle")
 HotKeySet("{F3}", "_handle")
 Opt("PixelCoordMode", 0)
-;$timerHndl = TimerInit()
 
 #cs
 #Region ### START Koda GUI section ### Form=
@@ -43,6 +43,7 @@ WEnd
 #ce
 Global $FFhWnd = 0
 Opt("MouseCoordMode", 1)
+
 
 While 1
 	If $FFhWnd <> 0 Then
@@ -74,7 +75,6 @@ Func _handle()
 		ConsoleWrite($FFhWnd & @CRLF)
 	EndIf
 EndFunc
-
 
 Func _capture_handle()
 	FFSetWnd($FFhWnd)
@@ -144,9 +144,13 @@ Func Fishing($WHnd)
 	EndIf
 
 	Sleep(14000)
+	Local $timer = TimerInit()
 	ConsoleWrite('Start' & @CRLF)
 	Local $aCoord1, $aCoord2, $aCoord3
 	While 1
+		If TimerDiff($timer) > 30000 Then	;timeout => 30s
+			ExitLoop
+		EndIf
 		FFSnapShot()
 		$aCoord1 = FFGetPixel(483, 51)
 		$aCoord2 = FFGetPixel(475, 51)
@@ -161,6 +165,7 @@ Func Fishing($WHnd)
 			Sleep(1000)
 			ExitLoop
 		EndIf
+		;ConsoleWrite(TimerDiff($timer) & @CRLF)
 	WEnd
 EndFunc
 

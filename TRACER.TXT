@@ -278,3 +278,79 @@
 		Started  Tue Aug 24 23:47:37 2021
 
            652.300µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Wed Aug 25 11:43:44 2021
+
+           542.900µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Wed Aug 25 11:44:03 2021
+
+           572.100µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Wed Aug 25 11:44:13 2021
+
+           696.000µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Wed Aug 25 11:44:36 2021
+
+           477.900µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Wed Aug 25 11:44:24 2021
+
+           608.700µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Wed Aug 25 11:45:02 2021
+
+           584.300µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+SnapShot( (0,0,0,0), 0) hWnd:00010178 "FolderView" Client Only:true =>               8.991S|SnapShot(N°:0, HWND:0x00010178) => Window Position (Title:"FolderView") = (0, 0, 3840, 1080) => (0, 0, 3840, 1080)
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Wed Aug 25 11:45:15 2021
+
+           638.900µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Wed Aug 25 11:45:43 2021
+
+           415.800µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Wed Aug 25 11:47:30 2021
+
+           744.500µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Wed Aug 25 11:49:59 2021
+
+           924.300µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Wed Aug 25 11:51:14 2021
+
+           728.900µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Wed Aug 25 12:15:53 2021
+
+           810.100µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Wed Aug 25 12:19:22 2021
+
+           833.400µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Wed Aug 25 12:21:37 2021
+
+           622.500µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
+
+****************************** FastFind 2.2 (c)FastFrench 2013 ********
+		Started  Wed Aug 25 12:24:07 2021
+
+           661.700µS|ChangeMode(231) => m_bDebugGraphique=1, m_DebugModeTxt=  E3
