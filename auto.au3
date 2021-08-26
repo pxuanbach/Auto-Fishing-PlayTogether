@@ -16,7 +16,7 @@
 #include <GUIListBox.au3>
 #include <WindowsConstants.au3>
 DllCall("User32.dll","bool","SetProcessDPIAware")
-HotKeySet('{ESC}','Thoat_Auto')
+HotKeySet('{F1}','Thoat_Auto')
 HotKeySet("{F2}", "_capture_handle")
 HotKeySet("{F3}", "_handle")
 Opt("PixelCoordMode", 0)
@@ -110,10 +110,10 @@ Func Select_Tool($WHnd)
 	Sleep(10)
 	ControlClick($WHnd,'','','left',2,900,317) ;click bag
 	ConsoleWrite('click bag'& @CRLF)
-	Sleep(1500)
+	Sleep(2000)
 	ControlClick($WHnd,'','','left',1,692,70) ;click tool
 	ConsoleWrite('click tool'& @CRLF)
-	Sleep(1000)
+	Sleep(2000)
 	FFSnapShot()
 	$aCoord = FFGetPixel(540, 195)
 	ConsoleWrite($aCoord & @CRLF)
